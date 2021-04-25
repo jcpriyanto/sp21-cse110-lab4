@@ -8,9 +8,10 @@ function discountedPrices(prices, discount) {
         discounted.push(discountedPrice);
     }
 
-    console.log(i);
+    // console.log(i);
     // console.log(length);
-    // console.log(discounted);
+    // console.log(finalPrice);
+    console.log(discounted);
     return discounted;
 }
 

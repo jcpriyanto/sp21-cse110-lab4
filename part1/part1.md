@@ -126,11 +126,11 @@ was defined using the let keyword, which made the variable inaccessible outside 
 
 7. ^^^ What will happen at line 14 and why? If the code causes an error, explain why. ^^^
  
- It will still print the last discounted price from the given price array since the let discountedPrice was defined within the same block scope.
+ It will still print the last discounted price which is 150 from the given price array since the let discountedPrice was defined within the same block scope.
 
 8. ^^^ What will this function return? Give a brief explanation. If the code causes an error, explain why. ^^^
 
- The function will still return an array of prices after it has been discounted.
+ The function will still return an array of prices after it has been discounted which is [ 50, 100, 150 ].
 
 9. ^^^ What will happen at line 11 and why? If the code causes an error, explain why. ^^^
 
@@ -156,7 +156,20 @@ It will return the length of the given price array, which is 3.
 
 11. ^^^ What will this function return? Give a brief explanation. If the code causes an error, explain why. ^^^
 
-The function will correctly return an array of final price that has been discounted. Which is [ 50, 100, 150 ]
+d:\Desktop\Lab\lab4\sp21-cse110-lab4\part1\Test files\tempCodeRunnerFile.js:1
+console.log(discounted);
+            ^
+
+ReferenceError: discounted is not defined
+    at Object.<anonymous> (d:\Desktop\Lab\lab4\sp21-cse110-lab4\part1\Test files\tempCodeRunnerFile.js:1:13)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)
+    at node:internal/main/run_main_module:17:47
+
+Explanation: The code causes an error because the discounted array was a const variable declared outside the for loop, making the array inaccessible outside the block scope.
 
 12. 
 a) student.name
@@ -199,8 +212,8 @@ The result of this is the array [ 2, 4, 6 ]. First, the function modifyArray tak
 
 1
 4
-2
 3
+2
 
 
 
