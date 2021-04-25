@@ -1,4 +1,4 @@
-PART 1a
+# PART 1A
 
 1. What is printed by line 9? If the code returns an error, explain why. ^^^^^
 
@@ -69,7 +69,7 @@ TypeError: Assignment to constant variable.
 The code returns an error because the const keyword has the same scope as the let keyword, making it
 unaccessible outside the code block where it was defined (if block).
 
-PART 1B
+# PART 1B
 
 1. ^^^ What will happen at line 12 and why? If the code causes an error, explain why. ^^^
 
@@ -191,7 +191,16 @@ f) true - Boolean(2) becomes true.
 16. (code)
 
 17. 
-The result of this is the array [ 2, 4, 6 ].
+The result of this is the array [ 2, 4, 6 ]. First, the function modifyArray takes in the array [1, 2, 3] as the parameter and taking doSomething function as the second paramater. modifyArray function wiill take each element from the array from the given paramater and then it will be multiplied by 2 by calling the doSomething function through the callback parameter.
+
+18. (code)
+
+19. 
+
+1
+4
+2
+3
 
 
 
